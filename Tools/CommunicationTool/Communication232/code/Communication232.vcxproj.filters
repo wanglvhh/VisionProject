@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="vision">
+      <UniqueIdentifier>{23b2e40b-4b21-4f06-8789-f3f0b9b24592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerialPort2">
+      <UniqueIdentifier>{3d6a6a6b-0a83-4ff9-8d04-d81b371c0a49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Communication232.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\Communication232.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Communication232.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleDevelopHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication232Interface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPort.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPortBase.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPortInfo.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPortInfoBase.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPortInfoWinBase.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\SerialPort2\SerialPortWinBase.cpp">
+      <Filter>SerialPort2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Communication232.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleDevelopHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\Communication232Base.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\CommunicationData.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ModuleDevelopH.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ToolType.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\vCriticalSection.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\vMacro.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication232Interface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\osplatformutil.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPort.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPort_global.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPortBase.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPortInfo.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPortInfoBase.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPortInfoWinBase.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\SerialPortWinBase.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\SerialPort2\sigslot.h">
+      <Filter>SerialPort2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Communication232.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

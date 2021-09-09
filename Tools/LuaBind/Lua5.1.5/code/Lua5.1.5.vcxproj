@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF1FC677-9166-4C5D-A08C-506580BF8E5D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Lua515</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\..\..\..\inc\Lua5.1.5\src;$(IncludePath)</IncludePath>
+    <OutDir>..\..\..\..\lib</OutDir>
+    <TargetName>$(ProjectName)D</TargetName>
+    <IntDir>.\tmp\debug</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\..\..\..\inc\Lua5.1.5\src;$(IncludePath)</IncludePath>
+    <OutDir>..\..\..\..\lib</OutDir>
+    <IntDir>.\tmp\release</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lapi.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lauxlib.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lcode.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\ldebug.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\ldo.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lfunc.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lgc.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\llex.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\llimits.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lmem.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lobject.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lopcodes.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lparser.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lstate.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lstring.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\ltable.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\ltm.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lua.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\luaconf.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lualib.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lundump.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lvm.h" />
+    <ClInclude Include="..\..\..\..\inc\Lua5.1.5\src\lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lapi.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lauxlib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lbaselib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lcode.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ldblib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ldebug.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ldo.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ldump.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lfunc.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lgc.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\linit.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\liolib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\llex.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lmathlib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lmem.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\loadlib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lobject.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lopcodes.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\loslib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lparser.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lstate.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lstring.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lstrlib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ltable.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ltablib.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\ltm.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lua.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\luac.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lundump.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lvm.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\lzio.c" />
+    <ClCompile Include="..\..\..\..\inc\Lua5.1.5\src\print.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

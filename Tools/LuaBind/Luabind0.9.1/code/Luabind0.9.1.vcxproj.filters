@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\detail">
+      <UniqueIdentifier>{3dfe7068-e6e8-45f6-af81-0f695e2a45c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\calc_arity.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\call.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\call_function.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\call_member.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\call_operator_iterate.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\class_cache.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\class_registry.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\class_rep.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\compute_score.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\constructor.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\conversion_storage.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\convert_to_lua.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\debug.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\decorate_type.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\deduce_signature.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\enum_maker.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\format_signature.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\garbage_collector.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\has_get_pointer.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\inheritance.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\instance_holder.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\is_indirect_const.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\link_compatibility.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\make_instance.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\most_derived.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\object_call.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\object_funs.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\object_rep.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\open.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\operator_id.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\other.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\pcall.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\pointee_sizeof.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\pointee_typeid.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\policy.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\primitives.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\property.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\ref.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\signature_match.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\stack_utils.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\typetraits.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\detail\yes_no.hpp">
+      <Filter>头文件\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\adopt_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\back_reference.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\back_reference_fwd.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\class.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\class_info.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\config.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\container_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\copy_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\dependency_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\discard_result_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\error.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\exception_handler.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\from_stack.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\get_main_thread.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\get_pointer.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\handle.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\iterator_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\lua_include.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\luabind.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\make_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\nil.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\object.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\open.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\operator.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\out_value_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\prefix.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\raw_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\return_reference_to_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\scope.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\shared_ptr_converter.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\tag_function.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\typeid.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\value_wrapper.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\version.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\weak_ref.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\wrapper_base.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\Luabind0.9.1\luabind\yield_policy.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\class_info.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\class_registry.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\class_rep.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\create_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\error.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\exception_handler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\inheritance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\link_compatibility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\object_rep.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\open.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\pcall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\scope.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\stack_content_by_name.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\weak_ref.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\Luabind0.9.1\src\wrapper_base.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

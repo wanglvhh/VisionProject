@@ -1,0 +1,692 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{1fde9c26-254c-45fe-8cf7-27ec636851e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\common">
+      <UniqueIdentifier>{58cca4c0-1251-4505-bbdc-e34c0bb02295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\control">
+      <UniqueIdentifier>{087d7d34-d9c2-4ea4-9013-47d9a84d3d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\vision">
+      <UniqueIdentifier>{ffc1b346-f9da-4a48-8d46-4f28451f0084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ini">
+      <UniqueIdentifier>{20553d4c-2907-4cfe-94ef-76bde065e5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\control2">
+      <UniqueIdentifier>{6472e8c9-0d40-461a-bc79-69da0d4d08c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\VisionProject.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\VisionProject.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Cycle.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Stop.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Camera.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Led.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Message.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DelView.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NewView.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ViewConnect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ExitSystem.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NewFlow.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Sub.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TstRun.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\License.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ManageUser.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SetPara.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\User.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Ui.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\LuaGobalVarient.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\hardware\HalconCamera.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\calibration\NineCalib.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\calibration\NineCaliReally.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\code - 20201015\res\VisionProject.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\hardware\CstLed.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\hardware\LotsLed.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\hardware\OptLed.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\scaleShapeModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\shapeModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DLogic\IntersectionLL.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\ContourModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\FitArc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\FitCircle.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\FitLine.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\NccModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\ScaleContourModel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DTool\Blob.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\2DLogic\Logic.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Cancel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Ok.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\BitmapTree.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp\BitmapTree.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp\drop_down.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Video.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CameraSet.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Save.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Project.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Load.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp\Splash.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Edit.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DelFlow.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Add.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Mobus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon6.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Clear.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Connect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Disconnect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Send.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\System\Comm232.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\System\CommSocket.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\System\Mobus.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Read.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Write.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Edit2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Write2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Add2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DelFlow2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Read2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VisionProject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProjectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInclude.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionEnum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionGlobal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageViewDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\BaseIni.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\CLicenseBase.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\CSerialize.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\CsvManage.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\CSVparser.hpp">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\CVisionFunctionClass.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\EasySize.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\ModuleDevelopH.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\SockDllDefine2.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\vFunc.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\common\vMacro.h">
+      <Filter>inc\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\BCMenu.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\BtnST.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\ControlToolTip.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\Led.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\NewLabel.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\WinXPButtonST.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\MyTab.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="HardWareToolPanelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CaliToolPanelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision2DPanelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vision2DLogicPanelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WorkFlowDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\ListBoxST.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionSystemPanelDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\VisionBase.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\VisionData.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NewDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaConnectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTreeListCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ModuleDevelopH.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\vCriticalSection.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\vMacro.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\CameraBase.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\ProSliderCtrl.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageCameraDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\HeaderCtrlCl.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\ListCtrlCl.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\SkinClass.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="AddCameraDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\SkinRadio.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\HardWareData.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraConnectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\VisionDefine.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\SystemFunction.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemIni.h">
+      <Filter>Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageProjectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control\BitmapCtrl.h">
+      <Filter>inc\control</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashWindowDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewConnectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GobalViarentDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageViarentDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\CommunicationData.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\CommunicationNode.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ModbusBase.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ModbusData.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeCommDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageCommunicationDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddComm232Dlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddCommTcpDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ManageModbusDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeModbusDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRtuMasterDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ToolType.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\CommunicationBase.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ManageCommunication.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="CommConnectDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\vision\ManageModbus.h">
+      <Filter>inc\vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\CheckEx.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\LabelEx.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\ListBoxEx.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\RadioEx.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\ScrollBarEx.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\control2\MyStatic.h">
+      <Filter>inc\control2</Filter>
+    </ClInclude>
+    <ClInclude Include="AddRtuSlaveDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddTcpMasterDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddTcpSlaveDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisionProject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProjectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionGlobal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageViewDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\BaseIni.cpp">
+      <Filter>inc\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\CSerialize.cpp">
+      <Filter>inc\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\CsvManage.cpp">
+      <Filter>inc\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\common\CSVparser.cpp">
+      <Filter>inc\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\BCMenu.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\BtnST.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\ControlToolTip.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\Led.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\NewLabel.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\WinXPButtonST.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\MyTab.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="HardWareToolPanelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CaliToolPanelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision2DPanelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Vision2DLogicPanelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WorkFlowDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\ListBoxST.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionSystemPanelDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NewDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaConnectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTreeListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\ProSliderCtrl.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageCameraDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\HeaderCtrlCl.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\ListCtrlCl.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\SkinComboBox.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\SkinControl.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCameraDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\SkinRadio.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraConnectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemIni.cpp">
+      <Filter>Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageProjectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control\BitmapCtrl.cpp">
+      <Filter>inc\control</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashWindowDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewConnectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GobalViarentDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageViarentDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeCommDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageCommunicationDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddComm232Dlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCommTcpDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageModbusDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeModbusDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRtuMasterDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommConnectDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\CheckEx.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\LabelEx.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\ListBoxEx.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\RadioEx.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\ScrollBarEx.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\MyStatic.cpp">
+      <Filter>inc\control2</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRtuSlaveDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddTcpMasterDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddTcpSlaveDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProject.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

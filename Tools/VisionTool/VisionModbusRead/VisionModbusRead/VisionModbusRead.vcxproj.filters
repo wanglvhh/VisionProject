@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="control">
+      <UniqueIdentifier>{4a056620-0977-4c9c-bf6f-1a9b550c50f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="control2">
+      <UniqueIdentifier>{646a30b5-bff3-425b-b51e-6adc620e12b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vision">
+      <UniqueIdentifier>{848d5a01-eb1d-4535-96f7-f4483746eb60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="VisionModbusRead.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\VisionModbusRead.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Cancel.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Cycle.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Load.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Save.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TstRun.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisionModbusRead.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleDevelopHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\BCMenu.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\BitmapCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\BtnST.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\ControlToolTip.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\HeaderCtrlCl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\Led.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\ListBoxST.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\ListCtrlCl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\MyTab.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\NewLabel.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\ProSliderCtrl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\SkinComboBox.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\SkinControl.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\SkinRadio.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control\WinXPButtonST.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\CheckEx.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\LabelEx.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\ListBoxEx.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\MyStatic.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\RadioEx.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\inc\control2\ScrollBarEx.cpp">
+      <Filter>control2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VisionModbusRead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleDevelopHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\BCMenu.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\BitmapCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\BtnST.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\ControlToolTip.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\HeaderCtrlCl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\Led.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\ListBoxST.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\ListCtrlCl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\MyTab.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\NewLabel.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\ProSliderCtrl.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\SkinClass.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\SkinRadio.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control\WinXPButtonST.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\CheckEx.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\LabelEx.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\ListBoxEx.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\MyStatic.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\RadioEx.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\control2\ScrollBarEx.h">
+      <Filter>control2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ManageModbus.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ModbusBase.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ModbusData.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ModuleDevelopH.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\ToolType.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\vCriticalSection.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\VisionData.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\VisionDefine.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\inc\vision\vMacro.h">
+      <Filter>vision</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionModbusRead.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

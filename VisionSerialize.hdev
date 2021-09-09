@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.1" halcon_version="17.12">
+<procedure name="main">
+<interface/>
+<body>
+<l>dev_set_draw('margin')</l>
+<c></c>
+<l>read_image(Image, 'printer_chip/printer_chip_01')</l>
+<l>draw_rectangle1(200000, Row1, Column1, Row2, Column2)</l>
+<l>gen_rectangle1(Rectangle, Row1, Column1, Row2, Column2)</l>
+<l>gen_contour_region_xld(Rectangle, Contours, 'border')</l>
+<c></c>
+<l>htuple := [1,2,'3.14','serialize',111]</l>
+<c></c>
+<l>open_file ('D:/1.vDat', 'output_binary', FileHandle)</l>
+<l>serialize_image(Image,  SerializedItemHandle)</l>
+<l>fwrite_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>serialize_xld (Contours, SerializedItemHandle)</l>
+<l>fwrite_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>serialize_region(Rectangle, SerializedItemHandle)</l>
+<l>fwrite_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>serialize_tuple(htuple, SerializedItemHandle)</l>
+<l>fwrite_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>close_file(FileHandle)</l>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

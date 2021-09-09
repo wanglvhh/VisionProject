@@ -1,0 +1,12 @@
+; SockDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "SockDll"
+DESCRIPTION  'SockDll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	InitSockEx					@1
+	ReadDataEx					@2
+	SendDataEx					@3
+	CloseSockEx					@4
+	GetAssociatsSocketIP		@5

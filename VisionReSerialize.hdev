@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.1" halcon_version="17.12">
+<procedure name="main">
+<interface/>
+<body>
+<l>dev_set_draw('margin')</l>
+<c></c>
+<l>open_file ('D:/1.vDat', 'input_binary', FileHandle)</l>
+<l>fread_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>deserialize_image(Image, SerializedItemHandle)</l>
+<l>fread_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>deserialize_xld(XLD, SerializedItemHandle)</l>
+<l>fread_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>deserialize_region(Region, SerializedItemHandle) </l>
+<l>fread_serialized_item(FileHandle, SerializedItemHandle)</l>
+<l>deserialize_tuple(SerializedItemHandle, Tuple)</l>
+<l>close_file(FileHandle)</l>
+<c></c>
+<l>if(Tuple[2] # '3.14')</l>
+<l>    write_string(200000,'error')</l>
+<l>else</l>
+<l>    write_string(200000,'ok') </l>
+<l>endif</l>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>

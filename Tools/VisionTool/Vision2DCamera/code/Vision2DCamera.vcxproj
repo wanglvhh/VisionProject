@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE3AE93A-C5CA-4E32-81DE-2E82B9230459}</ProjectGuid>
+    <RootNamespace>Vision2DCamera</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\bin</OutDir>
+    <IntDir>.\tmp\debug</IntDir>
+    <IncludePath>..\..\..\..\inc;..\..\..\..\inc\boost_1_56_0;..\..\..\..\inc\vision;..\..\..\..\inc\halconInc_x64;..\..\..\..\inc\halconInc_x64\halconcpp;..\..\..\..\inc\control;..\..\..\..\inc\control2;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\..\lib;..\..\..\..\lib\halconlib_x64;$(LibraryPath);C:\Program Files (x86)\BCGSoft\BCGControlBarPro\bin64</LibraryPath>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\bin</OutDir>
+    <IntDir>.\tmp\release</IntDir>
+    <IncludePath>..\..\..\..\inc;..\..\..\..\inc\boost_1_56_0;..\..\..\..\inc\vision;..\..\..\..\inc\halconInc_x64;..\..\..\..\inc\halconInc_x64\halconcpp;..\..\..\..\inc\control;..\..\..\..\inc\control2;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\..\..\lib;..\..\..\..\lib\halconlib_x64;$(LibraryPath);C:\Program Files (x86)\BCGSoft\BCGControlBarPro\bin64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\Vision2DCamera.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\Vision2DCamera.def</ModuleDefinitionFile>
+      <AdditionalDependencies>halconcpp.lib;</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\lib\Vision2DCameraD.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Vision2DCamera.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Vision2DCamera.def</ModuleDefinitionFile>
+      <AdditionalDependencies>halconcpp.lib;</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\lib\Vision2DCamera.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\Cancel.ico" />
+    <None Include="res\Cycle.ico" />
+    <None Include="res\Load.ico" />
+    <None Include="res\Save.ico" />
+    <None Include="res\TstRun.ico" />
+    <None Include="res\Vision2DCamera.rc2" />
+    <None Include="Vision2DCamera.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\inc\control2\CheckEx.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control2\LabelEx.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control2\ListBoxEx.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control2\MyStatic.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control2\RadioEx.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control2\ScrollBarEx.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\BCMenu.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\BitmapCtrl.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\BtnST.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\ControlToolTip.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\HeaderCtrlCl.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\Led.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\ListBoxST.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\ListCtrlCl.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\MyTab.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\NewLabel.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\ProSliderCtrl.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\SkinComboBox.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\SkinControl.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\SkinRadio.cpp" />
+    <ClCompile Include="..\..\..\..\inc\control\WinXPButtonST.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="ModuleDevelopHelper.cpp" />
+    <ClCompile Include="Para1Dlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Vision2DCamera.cpp" />
+    <ClCompile Include="Vision2DCameraInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\inc\control2\CheckEx.h" />
+    <ClInclude Include="..\..\..\..\inc\control2\LabelEx.h" />
+    <ClInclude Include="..\..\..\..\inc\control2\ListBoxEx.h" />
+    <ClInclude Include="..\..\..\..\inc\control2\MyStatic.h" />
+    <ClInclude Include="..\..\..\..\inc\control2\RadioEx.h" />
+    <ClInclude Include="..\..\..\..\inc\control2\ScrollBarEx.h" />
+    <ClInclude Include="..\..\..\..\inc\control\BCMenu.h" />
+    <ClInclude Include="..\..\..\..\inc\control\BitmapCtrl.h" />
+    <ClInclude Include="..\..\..\..\inc\control\BtnST.h" />
+    <ClInclude Include="..\..\..\..\inc\control\ControlToolTip.h" />
+    <ClInclude Include="..\..\..\..\inc\control\HeaderCtrlCl.h" />
+    <ClInclude Include="..\..\..\..\inc\control\Led.h" />
+    <ClInclude Include="..\..\..\..\inc\control\ListBoxST.h" />
+    <ClInclude Include="..\..\..\..\inc\control\ListCtrlCl.h" />
+    <ClInclude Include="..\..\..\..\inc\control\MyTab.h" />
+    <ClInclude Include="..\..\..\..\inc\control\NewLabel.h" />
+    <ClInclude Include="..\..\..\..\inc\control\ProSliderCtrl.h" />
+    <ClInclude Include="..\..\..\..\inc\control\SkinClass.h" />
+    <ClInclude Include="..\..\..\..\inc\control\SkinRadio.h" />
+    <ClInclude Include="..\..\..\..\inc\control\WinXPButtonST.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\ModuleDevelopH.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\ToolType.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\vCriticalSection.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\Vision2DCameraBase.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\VisionData.h" />
+    <ClInclude Include="..\..\..\..\inc\vision\vMacro.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="ModuleDevelopHelper.h" />
+    <ClInclude Include="Para1Dlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Vision2DCamera.h" />
+    <ClInclude Include="Vision2DCameraInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Vision2DCamera.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Vision2DCamera.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

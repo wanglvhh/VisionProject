@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D6574F3-7113-4307-9735-2454F9FBEC84}</ProjectGuid>
+    <RootNamespace>VisionProject</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+    <IntDir>.\tmp</IntDir>
+    <IncludePath>..\inc\halconInc_x64;..\inc\halconInc_x64\halconcpp;..\inc\common;..\inc\Lua5.3.4;..\inc\control;..\inc\vision;$(IncludePath);C:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro</IncludePath>
+    <LibraryPath>..\lib\halconlib_x32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+    <IntDir>.\tmp\debug</IntDir>
+    <IncludePath>..\inc\boost_1_56_0;..\inc\halconInc_x64;..\inc\halconInc_x64\halconcpp;..\inc\common;..\inc\Lua5.1.5\src;..\inc\control;..\inc\vision;..\inc;..\inc\Luabind0.9.1;..\inc\control2;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;..\lib\halconlib_x64;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+    <IntDir>.\tmp</IntDir>
+    <IncludePath>..\inc\halconInc_x64;..\inc\halconInc_x64\halconcpp;..\inc\common;..\inc\Lua5.3.4;..\inc\control;..\inc\vision;$(IncludePath);C:\Program Files (x86)\BCGSoft\BCGControlBarPro\BCGCBPro</IncludePath>
+    <LibraryPath>..\lib\halconlib_x32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+    <IntDir>.\tmp\release</IntDir>
+    <IncludePath>..\inc\boost_1_56_0;..\inc\halconInc_x64;..\inc\halconInc_x64\halconcpp;..\inc\common;..\inc\Lua5.1.5\src;..\inc\control;..\inc\vision;..\inc;..\inc\Luabind0.9.1;..\inc\control2;$(IncludePath)</IncludePath>
+    <LibraryPath>..\lib;..\lib\halconlib_x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>halconcpp.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions> _CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>setupapi.lib;halconcpp.lib;Lua5.1.5D.lib;Luabind0.9.1D.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>halconcpp.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions> _CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <AdditionalOptions>/Zm1000 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>setupapi.lib;halconcpp.lib;Lua5.1.5.lib;Luabind0.9.1.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\code - 20201015\res\VisionProject.ico" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\2DLogic\IntersectionLL.ico" />
+    <None Include="res\2DLogic\Logic.ico" />
+    <None Include="res\2DTool\Blob.ico" />
+    <None Include="res\2DTool\ContourModel.ico" />
+    <None Include="res\2DTool\FitArc.ico" />
+    <None Include="res\2DTool\FitCircle.ico" />
+    <None Include="res\2DTool\FitLine.ico" />
+    <None Include="res\2DTool\NccModel.ico" />
+    <None Include="res\2DTool\ScaleContourModel.ico" />
+    <None Include="res\2DTool\scaleShapeModel.ico" />
+    <None Include="res\2DTool\shapeModel.ico" />
+    <None Include="res\Add.ico" />
+    <None Include="res\Add2.ico" />
+    <None Include="res\BitmapTree.bmp" />
+    <None Include="res\bmp\BitmapTree.bmp" />
+    <None Include="res\bmp\drop_down.bmp" />
+    <None Include="res\bmp\Splash.bmp" />
+    <None Include="res\calibration\NineCalib.ico" />
+    <None Include="res\calibration\NineCaliReally.ico" />
+    <None Include="res\Camera.ico" />
+    <None Include="res\CameraSet.ico" />
+    <None Include="res\Cancel.ico" />
+    <None Include="res\Clear.ico" />
+    <None Include="res\Connect.ico" />
+    <None Include="res\Cycle.ico" />
+    <None Include="res\DelFlow.ico" />
+    <None Include="res\DelFlow2.ico" />
+    <None Include="res\DelView.ico" />
+    <None Include="res\Disconnect.ico" />
+    <None Include="res\Edit.ico" />
+    <None Include="res\Edit2.ico" />
+    <None Include="res\ExitSystem.ico" />
+    <None Include="res\hardware\CstLed.ico" />
+    <None Include="res\hardware\HalconCamera.ico" />
+    <None Include="res\hardware\LotsLed.ico" />
+    <None Include="res\hardware\OptLed.ico" />
+    <None Include="res\icon6.ico" />
+    <None Include="res\Led.ico" />
+    <None Include="res\License.ico" />
+    <None Include="res\Load.ico" />
+    <None Include="res\LuaGobalVarient.ico" />
+    <None Include="res\ManageUser.ico" />
+    <None Include="res\Message.ico" />
+    <None Include="res\Mobus.ico" />
+    <None Include="res\NewFlow.ico" />
+    <None Include="res\NewView.ico" />
+    <None Include="res\Ok.ico" />
+    <None Include="res\Project.ico" />
+    <None Include="res\Read.ico" />
+    <None Include="res\Read2.ico" />
+    <None Include="res\Save.ico" />
+    <None Include="res\Send.ico" />
+    <None Include="res\SetPara.ico" />
+    <None Include="res\Stop.ico" />
+    <None Include="res\Sub.ico" />
+    <None Include="res\System\Comm232.ico" />
+    <None Include="res\System\CommSocket.ico" />
+    <None Include="res\System\Mobus.ico" />
+    <None Include="res\TstRun.ico" />
+    <None Include="res\Ui.ico" />
+    <None Include="res\User.ico" />
+    <None Include="res\Video.ico" />
+    <None Include="res\ViewConnect.ico" />
+    <None Include="res\VisionProject.ico" />
+    <None Include="res\VisionProject.rc2" />
+    <None Include="res\Write.ico" />
+    <None Include="res\Write2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\inc\common\BaseIni.h" />
+    <ClInclude Include="..\inc\common\CLicenseBase.h" />
+    <ClInclude Include="..\inc\common\CSerialize.h" />
+    <ClInclude Include="..\inc\common\CsvManage.h" />
+    <ClInclude Include="..\inc\common\CSVparser.hpp" />
+    <ClInclude Include="..\inc\common\CVisionFunctionClass.h" />
+    <ClInclude Include="..\inc\common\EasySize.h" />
+    <ClInclude Include="..\inc\common\ModuleDevelopH.h" />
+    <ClInclude Include="..\inc\common\SockDllDefine2.h" />
+    <ClInclude Include="..\inc\common\vFunc.h" />
+    <ClInclude Include="..\inc\common\vMacro.h" />
+    <ClInclude Include="..\inc\control2\CheckEx.h" />
+    <ClInclude Include="..\inc\control2\LabelEx.h" />
+    <ClInclude Include="..\inc\control2\ListBoxEx.h" />
+    <ClInclude Include="..\inc\control2\MyStatic.h" />
+    <ClInclude Include="..\inc\control2\RadioEx.h" />
+    <ClInclude Include="..\inc\control2\ScrollBarEx.h" />
+    <ClInclude Include="..\inc\control\BCMenu.h" />
+    <ClInclude Include="..\inc\control\BitmapCtrl.h" />
+    <ClInclude Include="..\inc\control\BtnST.h" />
+    <ClInclude Include="..\inc\control\ControlToolTip.h" />
+    <ClInclude Include="..\inc\control\HeaderCtrlCl.h" />
+    <ClInclude Include="..\inc\control\Led.h" />
+    <ClInclude Include="..\inc\control\ListBoxST.h" />
+    <ClInclude Include="..\inc\control\ListCtrlCl.h" />
+    <ClInclude Include="..\inc\control\MyTab.h" />
+    <ClInclude Include="..\inc\control\NewLabel.h" />
+    <ClInclude Include="..\inc\control\ProSliderCtrl.h" />
+    <ClInclude Include="..\inc\control\SkinClass.h" />
+    <ClInclude Include="..\inc\control\SkinRadio.h" />
+    <ClInclude Include="..\inc\control\WinXPButtonST.h" />
+    <ClInclude Include="..\inc\vision\CameraBase.h" />
+    <ClInclude Include="..\inc\vision\CommunicationBase.h" />
+    <ClInclude Include="..\inc\vision\CommunicationData.h" />
+    <ClInclude Include="..\inc\vision\CommunicationNode.h" />
+    <ClInclude Include="..\inc\vision\HardWareData.h" />
+    <ClInclude Include="..\inc\vision\ManageCommunication.h" />
+    <ClInclude Include="..\inc\vision\ManageModbus.h" />
+    <ClInclude Include="..\inc\vision\ModbusBase.h" />
+    <ClInclude Include="..\inc\vision\ModbusData.h" />
+    <ClInclude Include="..\inc\vision\ModuleDevelopH.h" />
+    <ClInclude Include="..\inc\vision\SystemFunction.h" />
+    <ClInclude Include="..\inc\vision\ToolType.h" />
+    <ClInclude Include="..\inc\vision\vCriticalSection.h" />
+    <ClInclude Include="..\inc\vision\VisionBase.h" />
+    <ClInclude Include="..\inc\vision\VisionData.h" />
+    <ClInclude Include="..\inc\vision\VisionDefine.h" />
+    <ClInclude Include="..\inc\vision\vMacro.h" />
+    <ClInclude Include="AddCameraDlg.h" />
+    <ClInclude Include="AddComm232Dlg.h" />
+    <ClInclude Include="AddCommTcpDlg.h" />
+    <ClInclude Include="AddRtuMasterDlg.h" />
+    <ClInclude Include="AddRtuSlaveDlg.h" />
+    <ClInclude Include="AddTcpMasterDlg.h" />
+    <ClInclude Include="AddTcpSlaveDlg.h" />
+    <ClInclude Include="CaliToolPanelDlg.h" />
+    <ClInclude Include="CameraConnectDlg.h" />
+    <ClInclude Include="CommConnectDlg.h" />
+    <ClInclude Include="GobalViarentDlg.h" />
+    <ClInclude Include="HardWareToolPanelDlg.h" />
+    <ClInclude Include="ImageViewDlg.h" />
+    <ClInclude Include="ManageCameraDlg.h" />
+    <ClInclude Include="ManageCommunicationDlg.h" />
+    <ClInclude Include="ManageModbusDlg.h" />
+    <ClInclude Include="ManageProjectDlg.h" />
+    <ClInclude Include="ManageViarentDlg.h" />
+    <ClInclude Include="MyTreeListCtrl.h" />
+    <ClInclude Include="NewDlg.h" />
+    <ClInclude Include="ParaConnectDlg.h" />
+    <ClInclude Include="ProjectData.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SplashWindowDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemData.h" />
+    <ClInclude Include="SystemIni.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TypeCommDlg.h" />
+    <ClInclude Include="TypeModbusDlg.h" />
+    <ClInclude Include="ViewConnectDlg.h" />
+    <ClInclude Include="Vision2DLogicPanelDlg.h" />
+    <ClInclude Include="Vision2DPanelDlg.h" />
+    <ClInclude Include="VisionEnum.h" />
+    <ClInclude Include="VisionGlobal.h" />
+    <ClInclude Include="VisionInclude.h" />
+    <ClInclude Include="VisionProject.h" />
+    <ClInclude Include="VisionProjectDlg.h" />
+    <ClInclude Include="VisionSystemPanelDlg.h" />
+    <ClInclude Include="WorkFlowDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\inc\common\BaseIni.cpp" />
+    <ClCompile Include="..\inc\common\CSerialize.cpp" />
+    <ClCompile Include="..\inc\common\CsvManage.cpp" />
+    <ClCompile Include="..\inc\common\CSVparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\inc\control2\CheckEx.cpp" />
+    <ClCompile Include="..\inc\control2\LabelEx.cpp" />
+    <ClCompile Include="..\inc\control2\ListBoxEx.cpp" />
+    <ClCompile Include="..\inc\control2\MyStatic.cpp" />
+    <ClCompile Include="..\inc\control2\RadioEx.cpp" />
+    <ClCompile Include="..\inc\control2\ScrollBarEx.cpp" />
+    <ClCompile Include="..\inc\control\BCMenu.cpp" />
+    <ClCompile Include="..\inc\control\BitmapCtrl.cpp" />
+    <ClCompile Include="..\inc\control\BtnST.cpp" />
+    <ClCompile Include="..\inc\control\ControlToolTip.cpp" />
+    <ClCompile Include="..\inc\control\HeaderCtrlCl.cpp" />
+    <ClCompile Include="..\inc\control\Led.cpp" />
+    <ClCompile Include="..\inc\control\ListBoxST.cpp" />
+    <ClCompile Include="..\inc\control\ListCtrlCl.cpp" />
+    <ClCompile Include="..\inc\control\MyTab.cpp" />
+    <ClCompile Include="..\inc\control\NewLabel.cpp" />
+    <ClCompile Include="..\inc\control\ProSliderCtrl.cpp" />
+    <ClCompile Include="..\inc\control\SkinComboBox.cpp" />
+    <ClCompile Include="..\inc\control\SkinControl.cpp" />
+    <ClCompile Include="..\inc\control\SkinRadio.cpp" />
+    <ClCompile Include="..\inc\control\WinXPButtonST.cpp" />
+    <ClCompile Include="AddCameraDlg.cpp" />
+    <ClCompile Include="AddComm232Dlg.cpp" />
+    <ClCompile Include="AddCommTcpDlg.cpp" />
+    <ClCompile Include="AddRtuMasterDlg.cpp" />
+    <ClCompile Include="AddRtuSlaveDlg.cpp" />
+    <ClCompile Include="AddTcpMasterDlg.cpp" />
+    <ClCompile Include="AddTcpSlaveDlg.cpp" />
+    <ClCompile Include="CaliToolPanelDlg.cpp" />
+    <ClCompile Include="CameraConnectDlg.cpp" />
+    <ClCompile Include="CommConnectDlg.cpp" />
+    <ClCompile Include="GobalViarentDlg.cpp" />
+    <ClCompile Include="HardWareToolPanelDlg.cpp" />
+    <ClCompile Include="ImageViewDlg.cpp" />
+    <ClCompile Include="ManageCameraDlg.cpp" />
+    <ClCompile Include="ManageCommunicationDlg.cpp" />
+    <ClCompile Include="ManageModbusDlg.cpp" />
+    <ClCompile Include="ManageProjectDlg.cpp" />
+    <ClCompile Include="ManageViarentDlg.cpp" />
+    <ClCompile Include="MyTreeListCtrl.cpp" />
+    <ClCompile Include="NewDlg.cpp" />
+    <ClCompile Include="ParaConnectDlg.cpp" />
+    <ClCompile Include="SplashWindowDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SystemIni.cpp" />
+    <ClCompile Include="TypeCommDlg.cpp" />
+    <ClCompile Include="TypeModbusDlg.cpp" />
+    <ClCompile Include="ViewConnectDlg.cpp" />
+    <ClCompile Include="Vision2DLogicPanelDlg.cpp" />
+    <ClCompile Include="Vision2DPanelDlg.cpp" />
+    <ClCompile Include="VisionGlobal.cpp" />
+    <ClCompile Include="VisionProject.cpp" />
+    <ClCompile Include="VisionProjectDlg.cpp" />
+    <ClCompile Include="VisionSystemPanelDlg.cpp" />
+    <ClCompile Include="WorkFlowDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProject.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VisionProject.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
