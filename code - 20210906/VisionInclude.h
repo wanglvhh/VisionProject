@@ -15,6 +15,10 @@ using namespace HalconCpp;
 #include <type_traits>
 using namespace std;
 
+#include <gdiplus.h>
+#pragma comment(lib, "gdiplus.lib")
+using namespace Gdiplus;
+
 #include "..\Tools\TurboDLL\xTurboDLL.h"
 
 #include "..\inc\common\vFunc.h"

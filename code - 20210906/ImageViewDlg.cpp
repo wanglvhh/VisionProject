@@ -111,10 +111,11 @@ void CImageViewDlg::InitLabelControl()
 {
 	try
 	{
-		m_labelRow.SetWindowText(_T("Row:0")) ;
+		/*m_labelRow.SetWindowText(_T("Row:0")) ;
 		m_labelCol.SetWindowText(_T("Col:0")) ;
-		m_labelGray.SetWindowText(_T("Gray:0")) ;
-		/*m_labelRow.SetAlignTextCM();
+		m_labelGray.SetWindowText(_T("Gray:0")) ;*/
+
+		m_labelRow.SetAlignTextCM();
 		m_labelRow.SetColorBkg(255,0,0,0);
 		m_labelRow.SetColorBorder(255,0,0,0);
 		m_labelRow.SetColorText(255,RGB(0,255,0)) ;
@@ -133,7 +134,7 @@ void CImageViewDlg::InitLabelControl()
 		m_labelGray.SetColorBorder(255,0,0,0);
 		m_labelGray.SetColorText(255,RGB(0,255,0)) ;
 		m_labelGray.SetSizeText(10) ;
-		m_labelGray.SetText(_T("Gray:0")) ;*/
+		m_labelGray.SetText(_T("Gray:0")) ;
 	}
 	catch (...)
 	{

@@ -10,12 +10,9 @@ public:
 	HTuple                m_lWindowID ;
 	HObject              m_hImage ;
 	CMyStatic           m_ctlImageView;
-	CStatic               m_labelRow;
-	CStatic               m_labelCol;
-	CStatic               m_labelGray;
-	/*CLabelEx              m_labelRow;
+	CLabelEx              m_labelRow;
 	CLabelEx              m_labelCol;
-	CLabelEx              m_labelGray;*/
+	CLabelEx              m_labelGray;
 	double                m_dbRatioWh ;
 	int                      m_nImageWidth ;
 	int                    m_nImageHeight ;

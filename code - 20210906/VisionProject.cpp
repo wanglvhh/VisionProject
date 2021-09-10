@@ -46,6 +46,9 @@ BOOL CVisionProjectApp::InitInstance()
 
 	CWinApp::InitInstance();
 
+	Gdiplus::GdiplusStartupInput gdiplusStartupInput;
+	Gdiplus::GdiplusStartup(&m_gdiplusToken, &gdiplusStartupInput, NULL);
+
 	AfxEnableControlContainer();
 
 	// 创建 shell 管理器，以防对话框包含
@@ -87,4 +90,12 @@ BOOL CVisionProjectApp::InitInstance()
 	// 由于对话框已关闭，所以将返回 FALSE 以便退出应用程序，
 	//  而不是启动应用程序的消息泵。
 	return FALSE;
+}
+
+int CVisionProjectApp::ExitInstance()
+{
+	// TODO: 在此添加专用代码和/或调用基类
+	Gdiplus::GdiplusShutdown(m_gdiplusToken);
+
+	return CWinApp::ExitInstance();
 }

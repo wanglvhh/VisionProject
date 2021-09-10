@@ -16,6 +16,7 @@
 class CVisionProjectApp : public CWinApp
 {
 public:
+	ULONG_PTR m_gdiplusToken; 
 public:
 	CVisionProjectApp();
 
@@ -26,6 +27,7 @@ public:
 // й╣ож
 
 	DECLARE_MESSAGE_MAP()
+	virtual int ExitInstance();
 };
 
 extern CVisionProjectApp theApp;
